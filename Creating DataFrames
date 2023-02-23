@@ -1,0 +1,10 @@
+import pandas as pd
+
+# Create DataFrame from a dictionary
+df = pd.DataFrame({'col1': [1, 2, 3], 'col2': ['a', 'b', 'c']})
+
+# Create DataFrame from a list of lists
+df = pd.DataFrame([[1, 'a'], [2, 'b'], [3, 'c']], columns=['col1', 'col2'])
+
+# Create DataFrame from a CSV file
+df = pd.read_csv('filename.csv')
