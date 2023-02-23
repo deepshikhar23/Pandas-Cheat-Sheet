@@ -1,0 +1,26 @@
+# Select a column
+df['col1']
+
+# Select multiple columns
+df[['col1', 'col2']]
+
+# Select a row by index
+df.loc[index]
+
+# Select multiple rows by index
+df.loc[start_index:end_index]
+
+# Filter rows by a condition
+df[df['col1'] > 1]
+
+# Sort DataFrame by column
+df.sort_values('col1')
+
+# Drop a column
+df.drop('col1', axis=1)
+
+# Drop rows with missing values
+df.dropna()
+
+# Fill missing values with a specific value
+df.fillna(value)
